@@ -1,6 +1,4 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './style.css';
 
 class UmutiBusinessRequestCreate extends Component {
@@ -40,12 +38,12 @@ class UmutiBusinessRequestCreate extends Component {
                                 {createForm}
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
-                                <Link to="" className="blue-link"
-                                onClick={addMedecineClick}
-                                >{addMedecineText}</Link>
-                                <Link to="" className="blue-link"
-                                onClick={addCommentClick}
-                                >{addCommentText}</Link>
+                                <a href="#" className="blue-link"
+                                onClick={() => addMedecineClick()}
+                                >{addMedecineText}</a>
+                                <a href="#" className="blue-link"
+                                onClick={() => addCommentClick()}
+                                >{addCommentText}</a>
                             </div>
                             <div className="order-subtitle">{recipientTitle}</div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
@@ -53,29 +51,29 @@ class UmutiBusinessRequestCreate extends Component {
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset umuti-submit-btns form-component">
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset left-btn">
-                                    <Link to=""
-                                    onClick={submitClick}
+                                    <a href="#"
+                                    onClick={() => submitClick()}
                                     >
                                     <button type="submit" 
                                     className="blue-btn"
                                     disabled={submitDisableState}>
                                     {submitBtnText}
                                     </button>
-                                    </Link>
+                                    </a>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset right-btn">
-                                    <Link to="/orders">
+                                    <a href="#">
                                     <button type="cancel" 
                                     className="white-btn">
                                     Save
                                     </button>
-                                    </Link>
-                                    <Link to="/orders">
+                                    </a>
+                                    <a href="#">
                                     <button type="cancel" 
                                     className="white-btn discard-btn">
                                     Discard
                                     </button>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
