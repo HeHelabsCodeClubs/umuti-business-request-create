@@ -50,30 +50,32 @@ class UmutiBusinessRequestCreate extends Component {
                                 {recipientList}
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset umuti-submit-btns form-component">
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset left-btn">
-                                    <a href="#"
-                                    onClick={(e) => { e.preventDefault(); submitClick() }}
-                                    >
-                                    <button type="submit" 
-                                    className="blue-btn"
-                                    disabled={submitDisableState}>
-                                    {submitBtnText}
-                                    </button>
-                                    </a>
-                                </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset right-btn">
-                                    <a href="#">
-                                    <button type="cancel" 
-                                    className="white-btn">
-                                    Save
-                                    </button>
-                                    </a>
-                                    <a href="#">
-                                    <button type="cancel" 
-                                    className="white-btn discard-btn">
-                                    Discard
-                                    </button>
-                                    </a>
+                                <div className="row umuti-submit-btns-wrapper">
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset left-btn">
+                                        <a href="#"
+                                        onClick={(e) => { e.preventDefault(); submitClick() }}
+                                        >
+                                        <button type="submit" 
+                                        className="blue-btn"
+                                        disabled={submitDisableState}>
+                                        {submitBtnText}
+                                        </button>
+                                        </a>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset right-btn">
+                                        <a href="#">
+                                        <button type="cancel" 
+                                        className="white-btn">
+                                        Save
+                                        </button>
+                                        </a>
+                                        <a href="#">
+                                        <button type="cancel" 
+                                        className="white-btn discard-btn">
+                                        Discard
+                                        </button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

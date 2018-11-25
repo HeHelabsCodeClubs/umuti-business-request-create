@@ -54,3 +54,13 @@
     height: calc(100vh - 10rem);
     overflow-y: scroll;
 }
+
+.umuti-submit-btns-wrapper {
+    width: 52.2%;
+    z-index: 1000000;
+    margin: 0;
+    position: fixed;
+    background: #ffffff;
+    bottom: 2rem;
+}
+
