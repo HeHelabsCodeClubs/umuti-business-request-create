@@ -28,7 +28,7 @@
     border-radius: 0.2rem !important;
 }
 .umuti-create-request label {
-    margin: 0;
+    margin: 0 !important;
 }
 .umuti-create-request .select2-container--default .select2-selection--single {
     border: 1px solid #aaa !important;
