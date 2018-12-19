@@ -1,6 +1,4 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './style.css';
 
 class UmutiBusinessRequestCreate extends Component {
@@ -44,39 +42,44 @@ class UmutiBusinessRequestCreate extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
-                                <Link to="" className="blue-link"
-                                onClick={() => addPackageClick()}
-                                >{addMedecineText}</Link>
-                                <Link to="" className="blue-link"
-                                onClick={addCommentClick}
-                                >{addCommentText}</Link>
+                                <a href="#" className="blue-link"
+                                onClick={(e) => { e.preventDefault(); addMedecineClick() }}
+                                >{addMedecineText}</a>
+                                <a href="#" className="blue-link"
+                                onClick={(e) => { e.preventDefault(); addCommentClick() }}
+                                >{addCommentText}</a>
                             </div>
                             <div className="order-subtitle">{recipientTitle}</div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
                                 {recipientList}
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset umuti-submit-btns form-component">
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset left-btn">
-                                    <button 
-                                    onClick={() => submitClick()}
-                                    className="blue-btn"
-                                    disabled={submitDisableState}>
-                                    {submitBtnText}
-                                    </button>
-                                </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset right-btn">
-                                    <Link to="/orders">
-                                    <button type="cancel" 
-                                    className="white-btn">
-                                    Save
-                                    </button>
-                                    </Link>
-                                    <Link to="/orders">
-                                    <button type="cancel" 
-                                    className="white-btn discard-btn">
-                                    Discard
-                                    </button>
-                                    </Link>
+                                <div className="row umuti-submit-btns-wrapper">
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset left-btn">
+                                        <a href="#"
+                                        onClick={(e) => { e.preventDefault(); submitClick() }}
+                                        >
+                                        <button type="submit" 
+                                        className="blue-btn"
+                                        disabled={submitDisableState}>
+                                        {submitBtnText}
+                                        </button>
+                                        </a>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset right-btn">
+                                        <a href="#">
+                                        <button type="cancel" 
+                                        className="white-btn">
+                                        Save
+                                        </button>
+                                        </a>
+                                        <a href="#">
+                                        <button type="cancel" 
+                                        className="white-btn discard-btn">
+                                        Discard
+                                        </button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
