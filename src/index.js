@@ -37,11 +37,15 @@ class UmutiBusinessRequestCreate extends Component {
                         <div className="row reset-row create-form form-container">
                             <div className="order-subtitle">{formTitle}</div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
-                                {createForm}
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
+                                    <div className='row'>
+                                        {createForm}
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
                                 <Link to="" className="blue-link"
-                                onClick={addMedecineClick}
+                                onClick={() => addPackageClick()}
                                 >{addMedecineText}</Link>
                                 <Link to="" className="blue-link"
                                 onClick={addCommentClick}
@@ -53,15 +57,12 @@ class UmutiBusinessRequestCreate extends Component {
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset umuti-submit-btns form-component">
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset left-btn">
-                                    <Link to=""
-                                    onClick={submitClick}
-                                    >
-                                    <button type="submit" 
+                                    <button 
+                                    onClick={() => submitClick()}
                                     className="blue-btn"
                                     disabled={submitDisableState}>
                                     {submitBtnText}
                                     </button>
-                                    </Link>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-reset right-btn">
                                     <Link to="/orders">
