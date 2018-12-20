@@ -36,7 +36,11 @@ class UmutiBusinessRequestCreate extends Component {
                         <div className="row reset-row create-form form-container">
                             <div className="order-subtitle">{formTitle}</div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
-                                {createForm}
+                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
+                                    <div className='row'>
+                                        {createForm}
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">
                                 <a href="#" className="blue-link"
