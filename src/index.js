@@ -21,7 +21,8 @@ class UmutiBusinessRequestCreate extends Component {
             formTitle,
             umutiCreate,
             recipientTitle,
-            recipientList
+            recipientList,
+            commentBox
         } = this.props;
 
         return (
@@ -44,6 +45,7 @@ class UmutiBusinessRequestCreate extends Component {
                                 <a href="#" className="blue-link"
                                 onClick={(e) => { e.preventDefault(); addCommentClick() }}
                                 >{addCommentText}</a>
+                                <div>{commentBox}</div>
                             </div>
                             <div className="order-subtitle">{recipientTitle}</div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset">

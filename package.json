@@ -1,6 +1,6 @@
 {
   "name": "umuti-business-request-create",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "\"a component which render umuti business request create\"",
   "main": "dist/index.js",
   "scripts": {
