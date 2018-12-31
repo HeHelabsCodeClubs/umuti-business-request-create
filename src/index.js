@@ -25,7 +25,6 @@ class UmutiBusinessRequestCreate extends Component {
       commentBox,
       resetCreateForm
     } = this.props;
-
     return (
       <div
         className={`row reset-row create-wrapper orderWrapper ${umutiCreate}`}
@@ -80,7 +79,6 @@ class UmutiBusinessRequestCreate extends Component {
                         submitClick();
                       }}
                     >
-                    
                       <button
                         type="submit"
                         className="blue-btn"
